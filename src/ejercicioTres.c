@@ -4,19 +4,19 @@
 /**
  *  Ejercicio 3:
  Realizar el algoritmo que permita ingresar los datos de los alumnos de una
- divisi·n de la UTN FRA, los datos solicitados son:
+ divisi√≥n de la UTN FRA, los datos solicitados son:
  Legajo X
  Tipo cursada(L: 'libre', P: 'presencial' o R: 'remota')
  Cantidad de materias( mas de cero y menos de 8)
- Sexo (F: ·femenino· · M: 'masculino' , O: 'no binario')
+ Sexo (F: 'femenino' , M: 'masculino' , O: 'no binario')
  Nota promedio (entre 0 y 10)
  Edad (validar)
  Se debe informar de existir, o informar que no existe , en el caso que
  corresponda.
  a) El Legajo del mejor promedio que femenino.
- b) El legajo del m·s joven de los alumnos masculinos entre los que dan libre.
+ b) El legajo del m√°s joven de los alumnos masculinos entre los que dan libre.
  c) El promedio de nota por sexo.
- d) La edad y legajo del que cursa m·s materias. (Sin importar su g·nero)
+ d) La edad y legajo del que cursa m√°s materias. (Sin importar su g√©nero)
 
  Antony Fagundez
  */
@@ -43,7 +43,7 @@ void ejercicioTres()
 		tipoCursada = toupper(tipoCursada);
 		while (tipoCursada != 'L' && tipoCursada != 'P' && tipoCursada != 'R')
 		{
-			printf("ERROR. Ingrese un tipo de cursada v·lido. Opciones: ('L'=libre, 'P'=presencial o 'R'=remota) \n");
+			printf("ERROR. Ingrese un tipo de cursada vÔøΩlido. Opciones: ('L'=libre, 'P'=presencial o 'R'=remota) \n");
 			fflush(stdin);
 			scanf("%c", &tipoCursada);
 		}
@@ -52,7 +52,7 @@ void ejercicioTres()
 		scanf("%d", &cantidadMaterias);
 		while(cantidadMaterias < 1 || cantidadMaterias > 7)
 		{
-			printf("ERROR. Ingrese cantidad de materias v·lido (entre 1 y 7) \n");
+			printf("ERROR. Ingrese cantidad de materias vÔøΩlido (entre 1 y 7) \n");
 			scanf("%d", &cantidadMaterias);
 		}
 
@@ -62,7 +62,7 @@ void ejercicioTres()
 		sexo = toupper(sexo);
 		while (sexo != 'F' && sexo != 'M' && sexo != 'O')
 		{
-			printf("ERROR. Ingrese un sexo v·lido. Opciones: ('F'=femenino, 'M'=masculino o 'O'=no binario) \n");
+			printf("ERROR. Ingrese un sexo v√°lido. Opciones: ('F'=femenino, 'M'=masculino o 'O'=no binario) \n");
 			fflush(stdin);
 			scanf("%c", &tipoCursada);
 		}
@@ -71,7 +71,7 @@ void ejercicioTres()
 		scanf("%d", &notaPromedio);
 		while(notaPromedio < 0 || notaPromedio > 10)
 		{
-			printf("ERROR. Ingrese Nota promedio v·lido (entre 0 y 10) \n");
+			printf("ERROR. Ingrese Nota promedio v√°lido (entre 0 y 10) \n");
 			scanf("%d", &cantidadMaterias);
 		}
 
@@ -79,7 +79,7 @@ void ejercicioTres()
 		scanf("%d", &edad);
 		while(edad < 18)
 		{
-			printf("ERROR. Ingrese Edad v·lida (mayor a 17) \n");
+			printf("ERROR. Ingrese Edad v√°lida (mayor a 17) \n");
 			scanf("%d", &edad);
 		}
 
@@ -89,7 +89,7 @@ void ejercicioTres()
 		scanf("%c", &respuesta);
 		while (respuesta != 's' && respuesta != 'n')
 		{
-			printf("ERROR. Ingrese una opciÛn v·lida. Desea continuar: (s/n) \n");
+			printf("ERROR. Ingrese una opci√≥n v√°lida. Desea continuar: (s/n) \n");
 			fflush(stdin);
 			scanf("%c", &respuesta);
 		}
