@@ -4,8 +4,8 @@
 #define MAX 5
 /*
  Ejercicio 2:
- Ingresar 5 námeros. Determinar cuál es el máximo y el mánimo e
- indicar en quá orden fue ingresado.
+ Ingresar 5 nï¿½meros. Determinar cuï¿½l es el mï¿½ximo y el mï¿½nimo e
+ indicar en quï¿½ orden fue ingresado.
  Fagundez Antony 1 G
  * */
 void ejercicioDos()
@@ -20,13 +20,13 @@ void ejercicioDos()
 
 	for (cont = 0; cont < MAX; ++cont) {
 
-		printf("Ingrese el número de la posición %d\n", cont);
+		printf("Ingrese el nÃºmero de la posiciÃ³n %d\n", cont);
 		converted = scanf("%d", &number);
 
 		while(!converted)
 		{
 			fflush(stdin);
-			printf("ERROR. Ingrese un número válido para la posición %d\n", cont);
+			printf("ERROR. Ingrese un nÃºmero vÃ¡lido para la posiciÃ³n %d\n", cont);
 			converted = scanf("%d", &number);
 		}
 
@@ -44,12 +44,12 @@ void ejercicioDos()
 	}
 
 
-	printf("El mayor número es: %d\n", maxValue);
-	printf("El menor número es: %d\n", minValue);
+	printf("El mayor nÃºmero es: %d\n", maxValue);
+	printf("El menor nÃºmero es: %d\n", minValue);
 
 	sizeOfArray = sizeof(numbers)/sizeof(int);
 	for (int index = 0; index < sizeOfArray; ++index) {
-		printf("El número %d fue ingresado en la posición %d\n", numbers[index], index);
+		printf("El nÃºmero %d fue ingresado en la posiciï¿½n %d\n", numbers[index], index);
 	}
 
 
