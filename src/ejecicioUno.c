@@ -61,8 +61,7 @@ void ejercicioUno()
 		scanf("%c", &respuesta);
 		while (respuesta != 's' && respuesta != 'n')
 		{
-			printf(
-					"ERROR. Ingrese una opción válida. Desea continuar: (s/n) \n");
+			printf("ERROR. Ingrese una opción válida. Desea continuar: (s/n) \n");
 			fflush(stdin);
 			scanf("%c", &respuesta);
 		}
